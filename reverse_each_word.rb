@@ -1,6 +1,6 @@
 def reverse_each_word(str)
   res = ""
-  str.split(" ").each do |c|
+  str.split(" ").each_with_index do |c, i|
     res += c.reverse
     if !c.equal?(str[-1])
       res += " "

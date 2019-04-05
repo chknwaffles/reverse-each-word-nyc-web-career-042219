@@ -2,7 +2,7 @@ def reverse_each_word(str)
   res = ""
   str.split(" ").each_with_index do |c, i|
     res += c.reverse
-    if i != str.size
+    if i != str.size - 1
       res += " "
     end
   end

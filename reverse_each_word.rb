@@ -1,8 +1,9 @@
 def reverse_each_word(str)
   res = ""
+  arr = str.split(" ")
   str.split(" ").each do |c|
     res += c.reverse
-    if str[-1] != c
+    if str != c
       res += " "
     end
   end
